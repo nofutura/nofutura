@@ -1,0 +1,512 @@
+/*
+Theme Name: NOFUTURA
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* NOFUTURA STYLES */
+
+.site-links {
+    font-family: 'SF Mono Regular', monospace !important;
+}
+
+.menu, .page_item a, .menu-item a {
+    list-style: none;
+    font-family: 'SF Mono Regular', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    background-color: #f5f5f5;
+    font-family: "SF Mono Regular", monospace;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .foot {
+    list-style: none; 
+    /* line-height: 1.6; */
+    position: relative;
+    display: inline-flex; 
+    margin-bottom: -5px;
+  }
+  .foot p {margin-bottom: 0;}
+  /* .foot img {float: left; padding-right: 10px;} */ 
+  .right {float: right;}
+  .socials {display: inline-flex; list-style: none;}
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. 
+  
+  body > .container {
+    padding: 60px 15px 0;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+  */
+  h5 {
+    display: inline-block;
+    padding: 10px;
+    background: #B9121B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .site-header {
+    background-color: #161616; 
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;    
+    /*
+    background-image: url("file:///Users/patrickcummings/Desktop/NOFUTURA/img/headernofu.jpg");
+    background-repeat: no-repeat;  
+    background-size: cover; 
+    background: linear-gradient(180deg, #020202, transparent), url("file:///Users/patrickcummings/Desktop/NOFUTURA/img/headernofu.jpg") no-repeat center; 
+    background-size: cover; */
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8); 
+  }
+  .navbar-toggler-icon {
+    width: 3.5em;
+    height: auto;
+  }
+  .menu-bg {
+    background-color: rgba(36, 36, 36, 0.8);
+  }
+  .collapse.show {
+    padding-bottom: 50px;
+  }
+  button:focus {
+    outline: none;
+  }
+  .landingtype {
+    line-height: 1; 
+    margin: auto; 
+    font-weight: 300;
+    /* margin-bottom: 42px; */
+  }
+  
+  @media (max-width: 600px) {
+    .carousel-control-prev, .carousel-control-next {
+      display: none;
+    }
+  } 
+  
+  @media (max-height: 700px) {
+    .landingtype {
+      font-size: 34px!important;
+    }
+  }
+  
+
+  @media (min-width: 700px) {
+    .landingtype {
+      font-size: 55px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .landingtype {
+      font-size: 89px;
+    }
+  }
+
+  .site-links {
+    color: white;
+  }
+  .active {
+    text-decoration: line-through;
+  }
+  .active a {
+    color:rgba(255, 102, 102, 0.8) !important;
+  }
+  footer {
+    background: -webkit-linear-gradient(right, #e83e39, #f16639 , #f79837, #ffcc05);
+    background: -o-linear-gradient(right, #e83e39, #f16639 , #f79837, #ffcc05);
+    background: -moz-linear-gradient(right, #e83e39, #f16639 , #f79837, #ffcc05);
+    background: linear-gradient(to right, #e83e39, #f16639 , #f79837, #ffcc05);
+  }
+  .site-links a {color: white;}
+  .site-links a:hover {
+    text-decoration: line-through;
+    color:rgba(255, 102, 102, 0.8);
+  }
+  .gradient {
+    background: linear-gradient( #020202, transparent);
+  }
+  svg {width:100%;} 
+
+  #video-viewport { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1;  }
+  video {display: block;  width: 100%; height: auto; }
+  
+  .fullsize-video-bg { height: 100%; overflow: hidden; }
+  
+  .fullsize-video-bg:before { linear-gradient( #020202, transparent);  position: absolute;  top: 0; left: 0; width: 100%; height: 100%;  z-index: 0; }
+  .fullsize-video-bg:after { content: ""; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjI4RkZBQTgzNzg1NzExRTU4NTQyODc3OUM4MTZGMUREIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjI4RkZBQTg0Nzg1NzExRTU4NTQyODc3OUM4MTZGMUREIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjhGRkFBODE3ODU3MTFFNTg1NDI4Nzc5QzgxNkYxREQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjhGRkFBODI3ODU3MTFFNTg1NDI4Nzc5QzgxNkYxREQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz66uHInAAAAIUlEQVR42mL5//8/AyMj42YGIGBigABfEMEIkoEBgAADAKvuBwVS8BAjAAAAAElFTkSuQmCC); background-size: 3px 3px; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+  
+  
+  .fullsize-video-bg .inner {  display: table;  width: 100%; max-width: 24em; height: 100%; margin: 0 auto; padding: 0;  position: relative; z-index: 2; text-shadow: 0 1px 5px rgba(0,0,0,.5); }
+ .fullsize-video-bg .inner > div { text-align: center; display: table-cell; vertical-align: middle; padding: 0 2em; } 
+
+ .carousel-control-next, .carousel-control-prev {
+   width: 5%;
+ }
+
+ .carousel-caption {
+  position: absolute;
+  right: 5%;
+  bottom: 20px;
+  left: 5%;
+}
+.carousel-indicators {
+  /* bottom: 52px; */
+  display: none;
+}
+.chomsky {
+  font-family: 'chomskyregular';
+}
+
+/* MASONRY */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  /* center */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.cover {
+  width: 100%;
+}
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px
+}
+
+.content {
+  position: relative;
+  width: 96%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  cursor: pointer;
+  /* padding-bottom: 12px; */
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content:hover .content-image {
+  transform: scale(1.25);
+}
+
+.content-image {
+  width: 100%
+}
+/* 
+img {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px
+}*/
+
+.content-details {
+  height: 100%;
+  background: rgba(31, 31, 31, 0.8);
+  position: absolute;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-family: 'SF Mono Regular';
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .content-details h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-details h3 {
+    font-size: 12px;
+  }
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em
+}
+
+// Within style tags in your html file
+* { box-sizing: border-box; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 24%;
+}
+
+.grid-item--width2 {
+  width: 48% !important;
+}
+
+.grid-item--width3 {
+  width: 100% !important;
+  padding-right: 10px;
+}
+
+@media (max-width: 575px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 48%;
+  }
+}
+
+/* To change the amount of columns on larger devices, uncomment the code below */
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+} */
+.grid-item--width3 img, .grid-item--width2 img {
+  width: 100%;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.grid-item {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.grid-item img {
+  /* display: block; */
+  max-width: 100%;
+}
+
+.list-group-item {
+  background-color: none !important;
+  border: none;
+}
+.socials a {color: black;}
+.socials a:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .socials {float: right;} 
+  footer .row {padding-top: 1rem!important;}
+  .menu, .page_item a, .menu-item a {display: inline-flex; padding: 0 12px;}
+}
+
+@media (max-width: 768px) {
+  .socials {margin-top: 14px;} 
+  footer {text-align: center;}
+  .navbar #logo {margin-left: -48px;}
+}
+
+@font-face {
+  font-family: 'chomskyregular';
+  src: url('https://nofutura.com/newsite/wp-content/themes/NOFUTURA/webfonts/chomsky-webfont.woff2') format('woff2'),
+       url('https://nofutura.com/newsite/wp-content/themes/NOFUTURA/webfonts/chomsky-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'SF Mono Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF Mono Regular'), url('https://nofutura.com/wp-content/themes/NOFUTURATHEME/webfonts/SFMonoRegular.woff') format('woff');
+  }
+
+  body {
+    background-color: #161616;
+  }
+
+  .post-content h1, .post-content h2, .post-content h3 {
+    color:rgba(255, 102, 102, 0.8);
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-size: 34px;
+    font-family: 'Merriweather';
+  }
+
+  .post-content a {
+    color: white !important;
+    text-decoration: underline;
+  }
+
+  .post-content p {
+    color: white;
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: 'SF Mono Regular';
+  }
+  .post-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    pointer-events: none;
+}
+
+
+
+
